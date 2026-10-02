@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Bianca — designer gráfica, ilustradora e artista independente.">
+  <meta name="theme-color" content="#0D0E12">
+  <title>Bianca. — Designer, Ilustradora & Artista</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Bianca, voltar ao início">BIANCA<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>Menu</b></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a class="active" href="#home">Home</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#portfolio">Ilustrações</a>
+      <a href="#animacoes">Animações</a>
+      <a href="#portfolio">Designs</a>
+      <a href="#trajetoria">Cursos &amp; Exp.</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Apresentação Principal -->
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="scribble scribble-star">✦</div><div class="scribble scribble-arrow">↘</div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Designer gráfica &amp; artista independente</div>
+        <div class="hero-kicker">Hey, <span>I'm</span></div>
+        <h1 id="hero-title">BIANCA<span>.</span></h1>
+        <div class="speech-bubble">LET'S CREATE<br><strong>SOMETHING</strong><br>AWESOME! <i>↗</i></div>
+        <p class="hero-role">Designer Gráfica <b>•</b> Ilustradora Cartoon <b>•</b> Animadora 2D</p>
+        <p class="hero-intro">Ideias com cor, movimento e personalidade — transformadas em imagens que ficam na memória.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#portfolio">Ver projetos <span>↗</span></a><a class="button button-ghost" href="assets/bianca-curriculo.pdf" download>Baixar CV <span>↓</span></a></div>
+        <div class="scroll-cue"><span>↘</span> role para explorar</div>
+      </div>
+      <div class="hero-art" aria-label="Personagem ilustrado da Bianca">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="avatar-card"><div class="avatar-sticker">DRAW<br>YOUR<br>WORLD</div><div class="avatar-hair"></div><div class="avatar-face"><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="cheek"></span><span class="smile"></span></div><div class="avatar-neck"></div><div class="avatar-body"><span class="body-star">✦</span></div><div class="avatar-pencil">✎</div></div>
+        <div class="art-caption"><span>01</span> visual storyteller</div>
+      </div>
+    </section>
+
+    <!-- 2. Resumo de Movimento e Atividade -->
+    <section class="showreel section-shell" id="animacoes" aria-labelledby="showreel-title">
+      <div class="showreel-copy"><span class="section-tag">✦ resumo de movimento</span><h2 id="showreel-title">Um pouco de<br><em>movimento.</em></h2><p>Speedpaints, processos de animação e bastidores de criação num resumo rápido do meu universo visual.</p><a href="#portfolio" class="text-link">Explorar trabalhos <span>↗</span></a></div>
+      <div class="showreel-frame video-frame"><!-- Troque o src pelo vídeo final em assets/bianca-showreel.mp4. O fallback visual permanece ativo enquanto o arquivo não existir. --><video class="showreel-video" controls muted loop playsinline poster=""><source src="assets/bianca-showreel.mp4" type="video/mp4">O seu navegador não suporta vídeo HTML5.</video><div class="frame-sky"></div><div class="frame-sun"></div><div class="frame-city"></div><div class="frame-character"></div><div class="play-button">▶</div><span class="frame-label">SHOWREEL / 02</span></div>
+    </section>
+
+    <!-- 3. Projetos em Destaque e Galeria -->
+    <section class="portfolio section-shell" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section-heading"><div><span class="section-tag">✦ projetos &amp; galeria</span><h2 id="portfolio-title">Feito para<br><em>ser visto.</em></h2></div><p class="heading-note">Passe o cursor para<br>ativar o preview.</p></div>
+      <div class="filter-row" role="group" aria-label="Filtrar portfólio"><button class="filter-btn active" data-filter="featured">Em destaque <span>04</span></button><button class="filter-btn" data-filter="animation">Animações <span>03</span></button><button class="filter-btn" data-filter="design">Designs <span>02</span></button><button class="filter-btn" data-filter="static">Artes estáticas <span>03</span></button><button class="filter-btn" data-filter="all">Todos <span>08</span></button></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card wide featured-card" data-category="animation featured" data-modal-title="Inside My Head" data-modal-category="Animação · 2024" data-modal-desc="Ilustração editorial sobre o caos bonito das ideias em processo."><div class="portfolio-visual visual-head"><video class="card-preview" muted loop playsinline preload="none"><source src="assets/inside-my-head.mp4" type="video/mp4"></video><span>INSIDE<br>MY HEAD</span><i>✦</i><b class="preview-label">preview ↗</b></div><div class="portfolio-info"><span>01 / animação · 2024</span><h3>Inside My Head</h3><p>Uma viagem curta pelo processo criativo.</p><b>↗</b></div></article>
+        <article class="portfolio-card featured-card" data-category="animation featured" data-modal-title="Neon City" data-modal-category="Animação · 2024" data-modal-desc="Estudo de cenário e luz para uma cidade noturna imaginária."><div class="portfolio-visual visual-city"><video class="card-preview" muted loop playsinline preload="none"><source src="assets/neon-city.mp4" type="video/mp4"></video><span>NEON<br>CITY</span><i>◒</i><b class="preview-label">preview ↗</b></div><div class="portfolio-info"><span>02 / animação · 2024</span><h3>Neon City</h3><p>Cor, atmosfera e narrativa visual.</p><b>↗</b></div></article>
+        <article class="portfolio-card featured-card" data-category="design featured" data-modal-title="Studio Poster" data-modal-category="Design · 2023" data-modal-desc="Pôster tipográfico para uma noite de criação coletiva."><div class="portfolio-visual visual-poster"><video class="card-preview" muted loop playsinline preload="none"><source src="assets/studio-poster.mp4" type="video/mp4"></video><span>MAKE<br>NOISE</span><i>✳</i><b class="preview-label">preview ↗</b></div><div class="portfolio-info"><span>03 / design · 2023</span><h3>Studio Poster</h3><p>Tipografia com energia de palco.</p><b>↗</b></div></article>
+        <article class="portfolio-card" data-category="static" data-modal-title="Tiny Friends" data-modal-category="Arte estática · 2024" data-modal-desc="Uma coleção de criaturas pequenas, coloridas e muito expressivas."><div class="portfolio-visual visual-friends"><span>TINY<br>FRIENDS</span><i>♥</i></div><div class="portfolio-info"><span>04 / arte estática · 2024</span><h3>Tiny Friends</h3><p>Personagens para sorrir.</p><b>↗</b></div></article>
+        <article class="portfolio-card wide" data-category="animation" data-modal-title="Frame by Frame" data-modal-category="Animação · 2023" data-modal-desc="Frames de personagem e acting para uma cena de perseguição."><div class="portfolio-visual visual-frame"><video class="card-preview" muted loop playsinline preload="none"><source src="assets/frame-by-frame.mp4" type="video/mp4"></video><span>FRAME<br>BY FRAME</span><i>▶</i><b class="preview-label">preview ↗</b></div><div class="portfolio-info"><span>05 / animação · 2023</span><h3>Frame by Frame</h3><p>Acting e ritmo desenhados à mão.</p><b>↗</b></div></article>
+        <article class="portfolio-card" data-category="design" data-modal-title="Color Notes" data-modal-category="Design · 2023" data-modal-desc="Sistema visual para uma série de notas sobre cor e processo."><div class="portfolio-visual visual-notes"><span>COLOR<br>NOTES</span><i>✎</i></div><div class="portfolio-info"><span>06 / design · 2023</span><h3>Color Notes</h3><p>Um estudo de cor e identidade.</p><b>↗</b></div></article>
+        <article class="portfolio-card" data-category="static" data-modal-title="Soft Shapes" data-modal-category="Arte estática · 2022" data-modal-desc="Composição abstrata com formas suaves e cores vibrantes."><div class="portfolio-visual visual-soft"><span>SOFT<br>SHAPES</span><i>●</i></div><div class="portfolio-info"><span>07 / arte estática · 2022</span><h3>Soft Shapes</h3><p>Formas que encontram equilíbrio.</p><b>↗</b></div></article>
+        <article class="portfolio-card" data-category="static featured" data-modal-title="Daily Doodle" data-modal-category="Arte estática · 2024" data-modal-desc="Rabisco diário convertido em uma pequena peça gráfica."><div class="portfolio-visual visual-doodle"><span>DAILY<br>DOODLE</span><i>✦</i></div><div class="portfolio-info"><span>08 / arte estática · 2024</span><h3>Daily Doodle</h3><p>Pequenos traços, grandes ideias.</p><b>↗</b></div></article>
+      </div>
+    </section>
+
+    <!-- 4. Apresentação do Artista -->
+    <section class="about section-shell" id="sobre" aria-labelledby="about-title"><div class="about-visual"><span class="about-note">FOCO<br>DISCIPLINA<br>CRIATIVIDADE</span><div class="about-face"><span class="about-hair"></span><span class="about-eye"></span><span class="about-mouth"></span></div><span class="about-star">✦</span></div><div class="about-copy"><span class="section-tag">✦ sobre mim</span><h2 id="about-title">Oi, eu sou a <em>Bianca.</em></h2><p>Sou designer gráfica, ilustradora e animadora 2D apaixonada por criar universos visuais com humor, cor e intenção. Meu trabalho mistura o cuidado do feito à mão com a energia do digital.</p><p>Gosto de transformar conceitos complexos em imagens simples, expressivas e impossíveis de ignorar. Entre projetos autorais, colaborações e estudos, estou sempre procurando uma nova forma de contar histórias.</p><div class="about-actions"><a class="button button-lime" href="assets/bianca-curriculo.pdf" download>Baixar currículo PDF <span>↓</span></a><a href="#contato" class="text-link">Conheça meu processo <span>↗</span></a></div><div class="about-stats"><div><strong>03+</strong><span>anos criando</span></div><div><strong>40+</strong><span>projetos entregues</span></div><div><strong>∞</strong><span>ideias em notas</span></div></div></div></section>
+
+    <!-- 5. Ferramentas e Tecnologias -->
+    <section class="skills section-shell" aria-labelledby="skills-title"><div class="section-heading compact"><div><span class="section-tag">✦ toolbox</span><h2 id="skills-title">Ferramentas que<br><em>ganham vida.</em></h2></div><div class="scribble-line">〰〰〰</div></div><div class="skills-marquee"><div class="skills-track"><div class="skill"><strong>CD</strong><span>CorelDRAW</span></div><div class="skill"><strong>Ps</strong><span>Adobe Photoshop</span></div><div class="skill"><strong>Kr</strong><span>Krita</span></div><div class="skill"><strong>2D</strong><span>Animação 2D</span></div><div class="skill"><strong>✦</strong><span>Direção de arte</span></div><div class="skill"><strong>CD</strong><span>CorelDRAW</span></div><div class="skill"><strong>Ps</strong><span>Adobe Photoshop</span></div><div class="skill"><strong>Kr</strong><span>Krita</span></div><div class="skill"><strong>2D</strong><span>Animação 2D</span></div><div class="skill"><strong>✦</strong><span>Direção de arte</span></div></div></div></section>
+
+    <!-- 6. Trajetória de Aprendizado -->
+    <section class="journey section-shell" id="trajetoria" aria-labelledby="journey-title"><div class="section-heading"><div><span class="section-tag">✦ formação &amp; estudos</span><h2 id="journey-title">Trajetória de<br><em>aprendizado.</em></h2></div><span class="journey-sticker">keep<br>going! ↗</span></div><div class="timeline learning-timeline"><div class="timeline-item"><span>2024 — agora</span><h3>Estudos autorais contínuos</h3><p>Prática diária de desenho, direção de arte, composição e storytelling.</p></div><div class="timeline-item"><span>2023</span><h3>Curso de Animação 2D</h3><p>Fundamentos de movimento, acting, timing e narrativa visual.</p></div><div class="timeline-item"><span>2022</span><h3>Formação em Design Gráfico</h3><p>Identidade visual, composição, tipografia e direção de arte.</p></div><div class="timeline-item"><span>2021</span><h3>Primeiros projetos independentes</h3><p>Exploração de ilustração digital, ferramentas e publicação online.</p></div></div></section>
+
+    <!-- 7. O que Eu Busco -->
+    <section class="seeking section-shell" aria-labelledby="seeking-title"><div class="section-heading"><div><span class="section-tag">✦ próximos passos</span><h2 id="seeking-title">O que eu<br><em>busco.</em></h2></div></div><div class="seeking-grid"><article class="seek-card"><span>01</span><h3>Projetos com história</h3><p>Identidades, campanhas e ilustrações que tenham uma mensagem para contar.</p></article><article class="seek-card"><span>02</span><h3>Colaborações criativas</h3><p>Equipes abertas a experimentar, trocar referências e construir algo original.</p></article><article class="seek-card"><span>03</span><h3>Novos mundos</h3><p>Animações, personagens e experiências visuais que convidem as pessoas a ficar.</p></article></div></section>
+  </main>
+
+  <!-- 8. Contacto e chamada para ação -->
+  <footer class="site-footer section-shell" id="contato"><div class="footer-head"><span class="section-tag">✦ contacto</span><h2>VAMOS CRIAR<br>NOVAS <em>IDEIAS!</em></h2><div class="footer-scribble">✦ 〰</div></div><div class="footer-grid"><div class="footer-contact"><a href="mailto:hello@bianca.art">hello@bianca.art</a><button class="copy-email" type="button" data-email="hello@bianca.art">copiar e-mail <span>⧉</span></button><div class="footer-social"><a href="https://heyice.newgrounds.com/art" target="_blank" rel="noreferrer">Newgrounds <span>↗</span></a><a href="https://instagram.com/bianca.art" target="_blank" rel="noreferrer">Instagram <span>↗</span></a></div></div><form class="contact-form" action="mailto:hello@bianca.art" method="post" enctype="text/plain"><label for="contact-name">Seu nome<input id="contact-name" name="nome" type="text" placeholder="Como posso te chamar?" required></label><label for="contact-email">Seu e-mail<input id="contact-email" name="email" type="email" placeholder="voce@email.com" required></label><label for="contact-message">Mensagem<textarea id="contact-message" name="mensagem" rows="3" placeholder="Conte um pouco sobre o projeto..." required></textarea></label><button class="button button-lime" type="submit">Enviar mensagem <span>↗</span></button></form></div><div class="footer-bottom"><span>© 2024 Bianca. Feito com cor e intenção.</span><a href="#home">voltar ao topo ↑</a></div></footer>
+
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="modal-backdrop" data-close-modal></div><div class="modal-panel"><button class="modal-close" type="button" aria-label="Fechar projeto" data-close-modal>×</button><div class="modal-art" id="modal-art"></div><div class="modal-content"><span id="modal-category"></span><h2 id="modal-title"></h2><p id="modal-desc"></p><a href="#contato" class="text-link" data-close-modal>Quero conversar <span>↗</span></a></div></div></div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
